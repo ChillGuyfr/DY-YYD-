@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ModernWeb</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="dark">
+    <nav class="navbar">
+        <div class="nav-brand">ModernWeb</div>
+        <div class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/pages/features.html">Features</a>
+            <a href="/pages/ai.html">AI Assistant</a>
+            <a href="/pages/contact.html">Contact</a>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <div class="info-card">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>info@modernweb.com</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-phone"></i>
+                <h3>Phone</h3>
+                <p>+1 (555) 123-4567</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-location-dot"></i>
+                <h3>Address</h3>
+                <p>123 Web Street, Digital City, 12345</p>
+            </div>
+        </div>
+        <form id="contact-form" class="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 ModernWeb. All rights reserved.</p>
+    </footer>
+    <script type="module" src="/js/theme.js"></script>
+</body>
+</html>

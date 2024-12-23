@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant - ModernWeb</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/ai-section.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="dark">
+    <nav class="navbar">
+        <div class="nav-brand">ModernWeb</div>
+        <div class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/pages/features.html">Features</a>
+            <a href="/pages/ai.html">AI Assistant</a>
+            <a href="/pages/contact.html">Contact</a>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section class="ai-section">
+        <div class="ai-container">
+            <h2>AI Assistant</h2>
+            <p>Get intelligent responses powered by Groq AI</p>
+            
+            <form id="ai-form" class="ai-form">
+                <textarea 
+                    id="ai-prompt" 
+                    class="ai-prompt"
+                    placeholder="Enter your prompt here..."
+                    required
+                ></textarea>
+                <button type="submit" class="generate-button">
+                    <i class="fas fa-robot"></i> Generate
+                </button>
+            </form>
+            
+            <div id="loading" class="loading"></div>
+            <pre id="ai-output" class="ai-output"></pre>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 ModernWeb. All rights reserved.</p>
+    </footer>
+    <script type="module" src="/js/theme.js"></script>
+    <script type="module" src="/js/ai.js"></script>
+</body>
+</html>

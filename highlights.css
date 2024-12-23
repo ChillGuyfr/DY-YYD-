@@ -1,0 +1,52 @@
+.highlights {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.highlight-card {
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: var(--card-bg-dark);
+  transition: transform 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.light .highlight-card {
+  background-color: var(--card-bg-light);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+}
+
+.highlight-card i {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.highlight-card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+.light .highlight-card h3 {
+  color: var(--text-light);
+}
+
+.highlight-card p {
+  color: var(--text-dark);
+  opacity: 0.8;
+}
+
+.light .highlight-card p {
+  color: var(--text-light);
+}
